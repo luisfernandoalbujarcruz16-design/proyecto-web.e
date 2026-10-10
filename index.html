@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechNova Institute: programas académicos en tecnología y marketing digital.">
+  <title>TechNova Institute</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-md menu" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio">TechNova Institute</a>
+        <button id="botonMenu" class="navbar-toggler" type="button" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="listaMenu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#registro">Registro</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="inicio">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <h1>Aprende tecnología con una formación práctica</h1>
+            <p>En TechNova Institute te preparamos con programas actuales de software, redes y marketing digital, guiados por docentes con experiencia.</p>
+            <a class="btn btn-primary btn-lg" href="#programas">Conocer los programas</a>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid rounded" src="img/hero.jpg" alt="Estudiantes trabajando con computadoras">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="seccion-gris py-5">
+      <div class="container">
+        <h2 class="mb-4">Nosotros</h2>
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <img class="img-fluid rounded" src="img/alumnos.jpg" alt="Grupo de alumnos en clase">
+          </div>
+          <div class="col-md-6">
+            <p>TechNova Institute es una institución educativa (ficticia, creada para este trabajo) que forma a jóvenes y adultos en áreas de tecnología. Combinamos teoría y práctica para que cada estudiante aprenda haciendo.</p>
+            <div class="d-flex flex-column flex-sm-row gap-3">
+              <div class="card card-body shadow-sm">
+                <h3>Misión</h3>
+                <p class="mb-0">Formar profesionales competentes con una educación práctica y de calidad.</p>
+              </div>
+              <div class="card card-body shadow-sm">
+                <h3>Visión</h3>
+                <p class="mb-0">Ser una institución reconocida por su innovación y por el éxito de sus egresados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Beneficios de estudiar con nosotros</h2>
+        <div class="grid grid-4">
+          <div class="card card-body shadow-sm">
+            <h3>Clases prácticas</h3>
+            <p class="mb-0">Aprendes con proyectos reales desde el primer ciclo.</p>
+          </div>
+          <div class="card card-body shadow-sm">
+            <h3>Docentes con experiencia</h3>
+            <p class="mb-0">Profesionales que trabajan en la industria.</p>
+          </div>
+          <div class="card card-body shadow-sm">
+            <h3>Horarios flexibles</h3>
+            <p class="mb-0">Turnos de mañana, tarde y noche para que puedas organizarte.</p>
+          </div>
+          <div class="card card-body shadow-sm">
+            <h3>Bolsa de trabajo</h3>
+            <p class="mb-0">Te ayudamos a prepararte para tus primeras oportunidades laborales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programas" class="seccion-gris py-5">
+      <div class="container">
+        <h2 class="mb-4">Programas académicos</h2>
+        <div class="grid grid-3">
+
+          <div class="card shadow-sm">
+            <img class="card-img-top" src="img/software.jpg" alt="Código de programación en una pantalla">
+            <div class="card-body">
+              <h3>Ingeniería de Software</h3>
+              <p>Aprende a crear páginas web y aplicaciones desde cero.</p>
+              <button class="btn btn-primary boton-info" type="button" data-programa="software">Más información</button>
+              <p class="alert alert-info d-none mt-3 mb-0" id="info-software"></p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm">
+            <img class="card-img-top" src="img/redes.jpg" alt="Diagrama de una red de computadoras">
+            <div class="card-body">
+              <h3>Redes y Ciberseguridad</h3>
+              <p>Configura redes y aprende a proteger la información.</p>
+              <button class="btn btn-primary boton-info" type="button" data-programa="redes">Más información</button>
+              <p class="alert alert-info d-none mt-3 mb-0" id="info-redes"></p>
+            </div>
+          </div>
+
+          <div class="card shadow-sm">
+            <img class="card-img-top" src="img/marketing.jpg" alt="Gráficos de estadísticas de marketing">
+            <div class="card-body">
+              <h3>Marketing Digital</h3>
+              <p>Promociona marcas en internet y redes sociales.</p>
+              <button class="btn btn-primary boton-info" type="button" data-programa="marketing">Más información</button>
+              <p class="alert alert-info d-none mt-3 mb-0" id="info-marketing"></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="estadisticas" class="estadisticas">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <strong>1200</strong>
+            <span>Estudiantes</span>
+          </div>
+          <div class="col-4">
+            <strong>3</strong>
+            <span>Programas</span>
+          </div>
+          <div class="col-4">
+            <strong>95%</strong>
+            <span>Satisfacción</span>
+          </div>
+        </div>
+        <p class="mt-4 mb-0">Cifras ficticias, solo de demostración.</p>
+      </div>
+    </section>
+
+    <section id="testimonios" class="py-5">
+      <div class="container">
+        <h2>Testimonios</h2>
+        <p class="text-secondary mb-4">Testimonios ficticios, usados como ejemplo.</p>
+        <div class="grid grid-3">
+          <div class="card card-body shadow-sm">
+            <p>"Las clases son muy prácticas y los docentes siempre te ayudan."</p>
+            <p class="fw-bold mb-0">Camila R. – Ingeniería de Software</p>
+          </div>
+          <div class="card card-body shadow-sm">
+            <p>"Aprendí a configurar redes reales en los laboratorios."</p>
+            <p class="fw-bold mb-0">Diego M. – Redes y Ciberseguridad</p>
+          </div>
+          <div class="card card-body shadow-sm">
+            <p>"Hice campañas completas para negocios locales como parte del curso."</p>
+            <p class="fw-bold mb-0">Lucía P. – Marketing Digital</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="registro" class="seccion-gris py-5">
+      <div class="container">
+        <h2>Registro de interesados</h2>
+        <p class="text-secondary mb-4">Déjanos tus datos y te contactaremos con más información.</p>
+
+        <form id="formulario" class="card card-body shadow-sm formulario" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label" for="nombres">Nombres</label>
+              <input type="text" class="form-control" id="nombres" name="nombres">
+              <div class="invalid-feedback" id="error-nombres"></div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="apellidos">Apellidos</label>
+              <input type="text" class="form-control" id="apellidos" name="apellidos">
+              <div class="invalid-feedback" id="error-apellidos"></div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="correo">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" name="correo" placeholder="ejemplo@correo.com">
+              <div class="invalid-feedback" id="error-correo"></div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="telefono">Teléfono (9 dígitos)</label>
+              <input type="text" class="form-control" id="telefono" name="telefono" placeholder="987654321" maxlength="9">
+              <div class="invalid-feedback" id="error-telefono"></div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="edad">Edad</label>
+              <input type="number" class="form-control" id="edad" name="edad">
+              <div class="invalid-feedback" id="error-edad"></div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label" for="programa">Programa de interés</label>
+              <select class="form-select" id="programa" name="programa">
+                <option value="">Selecciona un programa</option>
+                <option value="Ingeniería de Software">Ingeniería de Software</option>
+                <option value="Redes y Ciberseguridad">Redes y Ciberseguridad</option>
+                <option value="Marketing Digital">Marketing Digital</option>
+              </select>
+              <div class="invalid-feedback" id="error-programa"></div>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="mensaje">Mensaje (opcional)</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="terminos" name="terminos">
+                <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+                <div class="invalid-feedback" id="error-terminos"></div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar registro</button>
+            </div>
+          </div>
+          <p id="confirmacion" class="alert alert-success d-none mt-3 mb-0"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Contacto</h2>
+        <div class="grid grid-3">
+          <div class="card card-body shadow-sm">
+            <h3>Correo</h3>
+            <p class="mb-0">info@technova-institute.example</p>
+          </div>
+          <div class="card card-body shadow-sm">
+            <h3>Teléfono</h3>
+            <p class="mb-0">(01) 555-0123</p>
+          </div>
+          <div class="card card-body shadow-sm">
+            <h3>Ubicación</h3>
+            <p class="mb-0">Av. Educación 123, Lima, Perú (referencial)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0"><strong>TechNova Institute</strong> &copy; <span id="anio"></span></p>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#registro">Registro</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

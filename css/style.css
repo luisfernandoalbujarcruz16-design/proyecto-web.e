@@ -1,0 +1,41 @@
+html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+body { color: #333; }
+h1, h2, h3 { color: #0b2a4a; }
+
+.menu { background: #0b2a4a; }
+
+.btn-primary {
+  --bs-btn-bg: #3b9ae1;
+  --bs-btn-border-color: #3b9ae1;
+  --bs-btn-hover-bg: #2a7fc2;
+  --bs-btn-hover-border-color: #2a7fc2;
+}
+
+.inicio { background: #0b2a4a; padding: 70px 0; }
+.inicio h1 { color: white; font-size: 2.6rem; }
+.inicio p { color: #dbe7f3; margin: 16px 0 28px; }
+
+.seccion-gris { background: #f2f4f7; }
+
+.card:hover { transform: translateY(-4px); }
+
+.grid { display: grid; gap: 24px; }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.estadisticas { background: #0b2a4a; color: #dbe7f3; padding: 50px 0; text-align: center; }
+.estadisticas strong { display: block; color: white; font-size: 2.6rem; }
+
+.formulario { max-width: 760px; }
+
+.pie { background: #0b2a4a; color: white; padding: 30px 0; }
+.pie .nav-link { color: #9fd0f5; }
+
+@media (max-width: 900px) {
+  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 700px) {
+  .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .inicio h1 { font-size: 1.8rem; }
+}
